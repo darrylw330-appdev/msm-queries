@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   get("/movies/:movie_id", { :controller => "movies", :action => "movie_details" })
 
-  get("/actors", { :controller => "actors", :action => "actors_list" })
+  get("/actors", { :controller => "actor", :action => "actor_list" })
 
-  get("/actors/:actor_id", { :controller => "actors", :action => "actors_details" })
+  get("/actors/:actor_id", { :controller => "actor", :action => "actor_details" })
 end
