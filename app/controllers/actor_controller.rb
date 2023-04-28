@@ -1,7 +1,7 @@
-class ActorsController < ApplicationController
-  def actors_list
+class ActorController < ApplicationController
+  def actor_list
     @actor_list = Actor.all
-    render({ :template => "actor_template/actors_list.html.erb" })
+    render({ :template => "actor_template/actor_list.html.erb" })
   end
 
   def actors_details
